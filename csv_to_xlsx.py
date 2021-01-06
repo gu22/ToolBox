@@ -15,6 +15,8 @@ import os
 data = datetime.datetime.now()
 data = (str(data.strftime("%y.%m.%d_%H.%M.%S")))
 
+print(f'Iniciou: {data}')
+
 file_raw = eg.fileopenbox()
 path = os.path.dirname(file_raw)
 with open(file_raw, 'rb') as f:
